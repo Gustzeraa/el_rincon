@@ -1,0 +1,48 @@
+{
+  "nombreRestaurante": "El Rincón",
+  "moneda": "€",
+  "contacto": {
+    "direccion": "Calle de la Tradición, 42 - Pueblo Histórico, España",
+    "horarios": "Mar - Dom: 13:00 a 16:30 / 20:00 a 23:30 (Lunes cerrado)",
+    "telefono": "+34 600 123 456"
+  },
+  "categorias": [
+    {
+      "id": "tapas",
+      "titulo": "Tapas y Entrantes",
+      "items": [
+        { "id": 1, "nombre": "Patatas Bravas", "descripcion": "Patatas rústicas con nuestra salsa brava casera y alioli.", "precio": 5.50 },
+        { "id": 2, "nombre": "Croquetas de Jamón", "descripcion": "Ración de 6 croquetas cremosas de jamón ibérico.", "precio": 7.00 },
+        { "id": 3, "nombre": "Gambas al Ajillo", "descripcion": "Gambas frescas salteadas con ajo, guindilla y aceite de oliva virgen extra.", "precio": 12.00 },
+        { "id": 4, "nombre": "Tabla de Ibéricos", "descripcion": "Selección de jamón ibérico, chorizo, salchichón y queso manchego.", "precio": 18.50 }
+      ]
+    },
+    {
+      "id": "principales",
+      "titulo": "Platos Principales",
+      "items": [
+        { "id": 5, "nombre": "Paella Valenciana", "descripcion": "Arroz tradicional con pollo, conejo, judías verdes y azafrán (Mínimo 2 personas).", "precio": 16.00 },
+        { "id": 6, "nombre": "Paella de Marisco", "descripcion": "Arroz caldoso con gambas, mejillones, calamares y cigalas.", "precio": 18.00 },
+        { "id": 7, "nombre": "Chuletón de Ternera", "descripcion": "Corte de carne a la parrilla (500g), acompañado de pimientos de Padrón.", "precio": 24.50 },
+        { "id": 8, "nombre": "Bacalao a la Vizcaína", "descripcion": "Lomo de bacalao confitado con salsa tradicional de pimientos choriceros.", "precio": 19.00 }
+      ]
+    },
+    {
+      "id": "postres",
+      "titulo": "Postres Caseros",
+      "items": [
+        { "id": 9, "nombre": "Crema Catalana", "descripcion": "Clásico postre cremoso con capa de azúcar caramelizada.", "precio": 5.00 },
+        { "id": 10, "nombre": "Tarta de Santiago", "descripcion": "Tarta tradicional de almendras espolvoreada con azúcar glas.", "precio": 6.00 }
+      ]
+    },
+    {
+      "id": "bebidas",
+      "titulo": "Bebidas",
+      "items": [
+        { "id": 11, "nombre": "Caña de Cerveza", "descripcion": "Cerveza de barril bien fría.", "precio": 2.00 },
+        { "id": 12, "nombre": "Copa de Vino Tinto", "descripcion": "Vino tinto de la casa (D.O. Rioja o Ribera del Duero).", "precio": 3.50 },
+        { "id": 13, "nombre": "Jarra de Sangría", "descripcion": "Refrescante sangría casera con fruta fresca (1 Litro).", "precio": 14.00 }
+      ]
+    }
+  ]
+}

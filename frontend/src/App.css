@@ -1,0 +1,168 @@
+/* --- RESET BÁSICO --- */
+* { box-sizing: border-box; margin: 0; padding: 0; }
+html { scroll-behavior: smooth; }
+body { 
+  font-family: 'Inter', 'Segoe UI', sans-serif; 
+  background-color: #121212; 
+  color: #fff; 
+}
+
+/* --- HERO SECTION --- */
+.hero-background {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  /* Imagem atualizada: Paella de Marisco */
+  background: linear-gradient(to bottom, rgba(0,0,0,0.85) 0%, rgba(0,0,0,0.3) 40%, rgba(18,18,18,1) 100%), 
+              url('https://images.unsplash.com/photo-1515443961218-a51367888e4b?q=80&w=2070&auto=format&fit=crop');
+  background-size: cover;
+  background-position: center;
+}
+
+.topbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 50px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+.social-links span { color: #ccc; font-size: 0.9rem; letter-spacing: 1px; text-transform: uppercase; }
+.topbar-actions { display: flex; align-items: center; gap: 20px; }
+.btn-outline-small {
+  background: transparent; border: 1px solid #f1c40f; color: #f1c40f;
+  padding: 10px 25px; border-radius: 30px; text-transform: uppercase;
+  font-size: 0.8rem; font-weight: 600; letter-spacing: 1px; cursor: pointer; transition: 0.3s;
+}
+.btn-outline-small:hover { background: #f1c40f; color: #111; }
+.mobile-menu-icon { display: none; cursor: pointer; color: #fff; }
+
+.logo-container { flex: 1; display: flex; align-items: center; justify-content: center; }
+.main-logo {
+  font-size: 6rem; font-family: 'Playfair Display', Georgia, serif;
+  font-style: italic; font-weight: 400; letter-spacing: 4px;
+  color: #fff; text-shadow: 2px 4px 15px rgba(0,0,0,0.6);
+}
+
+/* --- LÓGICA DA BARRA FIXA (STICKY NAV) --- */
+.nav-wrapper { width: 100%; z-index: 1000; transition: all 0.3s ease; }
+.nav-wrapper.sticky {
+  position: fixed; top: 0; left: 0;
+  background-color: rgba(18, 18, 18, 0.95);
+  backdrop-filter: blur(12px);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.5);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  animation: slideDown 0.4s ease-out forwards;
+}
+
+@keyframes slideDown {
+  from { transform: translateY(-100%); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
+}
+
+.icon-nav { display: flex; justify-content: center; gap: 80px; padding-bottom: 70px; flex-wrap: wrap; }
+.nav-wrapper.sticky .icon-nav { padding: 15px 0; gap: 60px; }
+
+.icon-link { display: flex; flex-direction: column; align-items: center; color: #ddd; text-decoration: none; gap: 12px; transition: 0.3s; }
+.icon-link:hover { color: #f1c40f; transform: translateY(-5px); }
+.icon-link span { font-size: 0.85rem; text-transform: uppercase; letter-spacing: 2px; }
+
+/* --- CARDÁPIO CENTRALIZADO --- */
+.menu-container { max-width: 1200px; margin: 0 auto; padding: 80px 40px 100px; }
+.section-header { display: flex; flex-direction: column; align-items: center; margin-bottom: 70px; }
+.section-header h2 { font-size: 2.8rem; color: #fff; font-family: 'Playfair Display', serif; margin-bottom: 15px; }
+.divider { width: 80px; height: 3px; background-color: #f1c40f; border-radius: 2px; }
+
+.menu-category { margin-bottom: 80px; }
+.category-title {
+  font-size: 1.6rem; margin-bottom: 40px; color: #f1c40f;
+  text-transform: uppercase; letter-spacing: 3px; text-align: center;
+}
+
+.premium-grid { display: grid; gap: 30px; grid-template-columns: repeat(auto-fill, minmax(320px, 1fr)); }
+.premium-card {
+  display: flex; flex-direction: column; align-items: center; text-align: center;
+  padding: 40px 30px; background: rgba(255, 255, 255, 0.02);
+  border: 1px solid rgba(255, 255, 255, 0.05); border-radius: 12px;
+  transition: all 0.3s ease; gap: 20px;
+}
+.premium-card:hover { 
+  background: rgba(255, 255, 255, 0.05); 
+  transform: translateY(-8px); 
+  border-color: rgba(241, 196, 15, 0.3);
+}
+.card-info { display: flex; flex-direction: column; align-items: center; gap: 12px; }
+.card-info h4 { font-size: 1.35rem; color: #fff; font-family: 'Playfair Display', serif; letter-spacing: 1px; }
+.card-info p { color: #aaa; font-size: 0.95rem; line-height: 1.6; }
+.card-price span { font-size: 1.5rem; font-weight: 700; color: #f1c40f; }
+
+/* --- SEÇÃO DE INFORMAÇÕES (HORÁRIOS/LOCAL) --- */
+.info-section {
+  background-color: #0a0a0a; padding: 100px 20px; border-top: 1px solid rgba(255,255,255,0.05);
+}
+.info-container {
+  max-width: 1200px; margin: 0 auto;
+  display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 40px;
+}
+.info-box {
+  display: flex; flex-direction: column; align-items: center; text-align: center;
+  padding: 40px 30px; background: rgba(255,255,255,0.02); border-radius: 16px;
+  border: 1px solid rgba(255,255,255,0.05); transition: 0.3s;
+}
+.info-box:hover { background: rgba(255,255,255,0.04); transform: translateY(-5px); }
+.info-box h3 { margin: 25px 0 15px; font-size: 1.5rem; color: #fff; letter-spacing: 2px; text-transform: uppercase; }
+.info-box p { color: #bbb; line-height: 1.7; font-size: 1.05rem; }
+
+/* --- FOOTER PREMIUM ESTILO EL MARE --- */
+.site-footer { width: 100%; color: #fff; }
+.footer-top { background-color: #0A1128; padding: 60px 40px 30px; }
+.footer-grid {
+  max-width: 1200px; margin: 0 auto 40px; display: grid;
+  grid-template-columns: 1fr 1fr 1fr; align-items: center; gap: 30px; text-align: center;
+}
+.footer-logo { font-family: 'Playfair Display', Georgia, serif; font-size: 2.5rem; font-style: italic; color: #fff; letter-spacing: 2px; }
+.footer-contact p { margin-bottom: 8px; color: #ddd; font-size: 0.95rem; line-height: 1.5; }
+.footer-social p { font-size: 0.9rem; margin-bottom: 12px; color: #ddd; font-weight: 600; }
+.social-icons { display: flex; justify-content: center; gap: 15px; }
+.social-icons a { color: #fff; transition: color 0.3s; }
+.social-icons a:hover { color: #f1c40f; }
+
+.footer-nav {
+  max-width: 1000px; margin: 0 auto; display: flex; justify-content: center; flex-wrap: wrap; gap: 15px; font-size: 0.85rem; font-weight: 600;
+}
+.footer-nav a { color: #ccc; text-decoration: none; transition: 0.3s; }
+.footer-nav a:hover { color: #fff; }
+.separator { color: #444; }
+
+.footer-bottom {
+  background-color: #000000; padding: 20px 50px; display: flex; justify-content: space-between; align-items: center;
+  font-size: 0.75rem; color: #999; flex-wrap: wrap; gap: 15px;
+}
+.developer-credit strong { color: #fff; letter-spacing: 1px; }
+
+/* --- WHATSAPP --- */
+.whatsapp-float {
+  position: fixed; bottom: 40px; right: 40px; background-color: #25D366;
+  width: 65px; height: 65px; border-radius: 50%; display: flex; align-items: center; justify-content: center;
+  box-shadow: 0 4px 20px rgba(37, 211, 102, 0.4); z-index: 1000; transition: 0.3s;
+}
+.whatsapp-float:hover { transform: scale(1.1); }
+
+/* --- RESPONSIVIDADE --- */
+@media (max-width: 900px) { 
+  .icon-nav { gap: 40px; } 
+  .main-logo { font-size: 4.5rem; } 
+}
+@media (max-width: 768px) {
+  .topbar { padding: 15px 20px; }
+  .social-links span, .btn-outline-small { display: none; }
+  .mobile-menu-icon { display: block; }
+  .main-logo { font-size: 3.5rem; }
+  
+  .icon-nav { gap: 25px; padding-bottom: 40px; }
+  .nav-wrapper.sticky .icon-nav { gap: 15px; padding: 12px 10px; }
+  .nav-wrapper.sticky .icon-link span { font-size: 0.65rem; }
+  
+  .footer-grid { grid-template-columns: 1fr; gap: 40px; }
+  .footer-bottom { flex-direction: column; text-align: center; justify-content: center; }
+  .whatsapp-float { bottom: 20px; right: 20px; width: 55px; height: 55px; }
+}
