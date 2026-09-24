@@ -12,9 +12,9 @@ body {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-  /* Imagem atualizada: Paella de Marisco */
+  /* Coloque a foto da grelha com fogo aqui */
   background: linear-gradient(to bottom, rgba(0,0,0,0.85) 0%, rgba(0,0,0,0.3) 40%, rgba(18,18,18,1) 100%), 
-              url('https://images.unsplash.com/photo-1515443961218-a51367888e4b?q=80&w=2070&auto=format&fit=crop');
+              url('/images/grelhado.png');
   background-size: cover;
   background-position: center;
 }
@@ -165,4 +165,156 @@ body {
   .footer-grid { grid-template-columns: 1fr; gap: 40px; }
   .footer-bottom { flex-direction: column; text-align: center; justify-content: center; }
   .whatsapp-float { bottom: 20px; right: 20px; width: 55px; height: 55px; }
+}
+
+/* --- ESTILO DOS CARDS COM IMAGEM --- */
+.premium-card {
+  display: flex;
+  flex-direction: column;
+  background-color: #111; /* Fundo escuro para destacar a foto */
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 12px;
+  overflow: hidden; /* Garante que a foto respeite os cantos arredondados */
+  transition: transform 0.3s ease;
+}
+
+.premium-card:hover {
+  transform: translateY(-5px);
+}
+
+.card-image-wrapper {
+  width: 100%;
+  height: 200px; /* Altura fixa para manter o alinhamento do grid */
+}
+
+.card-image-wrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Faz a foto preencher o espaço sem distorcer */
+}
+
+.card-content {
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* --- ESTILOS DA LOGO --- */
+.main-logo-img {
+  max-width: 250px; /* Ajuste esse valor dependendo do formato da logo */
+  height: auto;
+  margin-bottom: 20px;
+  filter: drop-shadow(0px 4px 6px rgba(0,0,0,0.5)); /* Dá um destaque legal se ela não tiver fundo */
+}
+
+.footer-logo-img {
+  max-width: 180px;
+  height: auto;
+  margin-bottom: 15px;
+}
+
+/* --- ESTILOS DA SEÇÃO NOSOTROS (FACHADA) --- */
+.about-container {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 20px;
+  align-items: center;
+}
+
+.about-image-wrapper {
+  width: 100%;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+}
+
+.about-image {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.about-text {
+  color: #bbb;
+  line-height: 1.8;
+  font-size: 1.1rem;
+  text-align: left;
+}
+
+/* Se a tela for de tablet ou PC, coloca a foto e o texto lado a lado */
+@media (min-width: 768px) {
+  .about-container {
+    flex-direction: row;
+  }
+  
+  .about-image-wrapper {
+    flex: 1;
+  }
+  
+  .about-text {
+    flex: 1;
+  }
+}
+
+/* --- ESTILOS DO MAPA --- */
+.map-section {
+  padding: 50px 20px;
+  max-width: 1000px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.map-container {
+  width: 100%;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+  /* Uma borda sutil para combinar com o tema escuro/premium */
+  border: 1px solid rgba(255, 255, 255, 0.1); 
+  background-color: #111;
+}
+
+/* Garante que o mapa fique responsivo no celular */
+.map-container iframe {
+  display: block;
+  width: 100%;
+}
+
+/* --- SELETOR DE IDIOMAS (TEXTO) --- */
+.lang-switcher {
+  display: flex;
+  gap: 5px;
+  margin-right: 15px;
+  background: rgba(0, 0, 0, 0.5);
+  padding: 4px;
+  border-radius: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  align-items: center;
+}
+
+.lang-btn {
+  background: transparent;
+  border: none;
+  color: #aaa;
+  font-size: 0.85rem;
+  font-weight: bold;
+  cursor: pointer;
+  padding: 4px 8px;
+  border-radius: 15px;
+  transition: all 0.3s ease;
+}
+
+.lang-btn:hover {
+  color: #fff;
+}
+
+.lang-btn.active {
+  background: #f1c40f;
+  color: #000;
 }

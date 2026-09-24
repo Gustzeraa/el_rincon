@@ -1,48 +1,186 @@
 {
-  "nombreRestaurante": "El Rincón",
-  "moneda": "€",
-  "contacto": {
-    "direccion": "Calle de la Tradición, 42 - Pueblo Histórico, España",
-    "horarios": "Mar - Dom: 13:00 a 16:30 / 20:00 a 23:30 (Lunes cerrado)",
-    "telefono": "+34 600 123 456"
+  "es": {
+    "nombreRestaurante": "Parrillada A Capela",
+    "moneda": "€",
+    "contacto": {
+      "direccion": "Rúa Xermade, 10, 27300 Guitiriz, Lugo",
+      "telefono": "+34667323029",
+      "horarios": "Mar-Vie 08:00–23:30 \n Sáb-Dom 09:00–23:30 \n Lunes: Cerrado",
+      "mapaUrl": ""
+    },
+    "categorias": [
+      {
+        "id": "entrantes",
+        "titulo": "Para Picar (Entrantes)",
+        "items": [
+          { "id": 1, "nombre": "Pulpo con Cachelos", "descripcion": "Tradicional pulpo a la gallega con patatas cocidas.", "precio": 0.00, "imagen": "/images/pulpo.jpg" },
+          { "id": 3, "nombre": "Tabla de Jamón Ibérico", "descripcion": "Corte de jamón acompañado de pan rústico.", "precio": 0.00, "imagen": "/images/jamon.jpg" },
+          { "id": 4, "nombre": "Calamares Frescos", "descripcion": "Anillas de calamar frito, crujientes por fuera.", "precio": 0.00, "imagen": "/images/calamares.jpg" },
+          { "id": 5, "nombre": "Gambas al Ajillo", "descripcion": "Gambas cocinadas en cazuela de barro con ajo y guindilla.", "precio": 0.00, "imagen": "/images/gambas.jpg" },
+          { "id": 6, "nombre": "Croquetas Caseras", "descripcion": "Nuestras tradicionales croquetas.", "precio": 0.00, "imagen": "/images/croquetas.jpg" }
+        ]
+      },
+      {
+        "id": "carnes",
+        "titulo": "Carnes y Parrilla",
+        "items": [
+          { "id": 9, "nombre": "Churrasco de Cerdo", "descripcion": "Costillas de cerdo hechas a la brasa de leña.", "precio": 0.00, "imagen": "/images/cerdo.jpg" },
+          { "id": 10, "nombre": "Chuletón de Ternera", "descripcion": "Impresionante corte premium a la parrilla, servido con sal gruesa.", "precio": 0.00, "imagen": "/images/chuleton.jpg" },
+          { "id": 11, "nombre": "Raxo con Patatas", "descripcion": "Lomo de cerdo troceado y adobado, servido con patatas fritas.", "precio": 0.00, "imagen": "/images/raxo.jpg" },
+          { "id": 12, "nombre": "Lacón con Grelos", "descripcion": "Plato muy abundante y tradicional de la gastronomía gallega.", "precio": 0.00, "imagen": "/images/lacon.jpg" },
+          { "id": 13, "nombre": "Alitas de Pollo", "descripcion": "Alitas de pollo crujientes a la brasa.", "precio": 0.00, "imagen": "/images/pollo.jpg" }
+        ]
+      },
+      {
+        "id": "mariscos",
+        "titulo": "Pescados y Mariscos",
+        "items": [
+          { "id": 14, "nombre": "Mariscada Especial", "descripcion": "Espectacular selección de mariscos: Bogavante, cigalas, percebes y zamburiñas.", "precio": 0.00, "imagen": "/images/mariscada.jpg" },
+          { "id": 15, "nombre": "Langostinos a la Plancha", "descripcion": "Langostinos frescos preparados a la plancha.", "precio": 0.00, "imagen": "/images/langostino.jpg" },
+          { "id": 16, "nombre": "Paella de Marisco", "descripcion": "(Por encargo) Tradicional paella con el mejor sabor del mar.", "precio": 0.00, "imagen": "/images/paella.jpg" }
+        ]
+      },
+      {
+        "id": "postres",
+        "titulo": "Postres Caseros",
+        "items": [
+          { "id": 17, "nombre": "Tarta Helada", "descripcion": "Postre frío tradicional.", "precio": 0.00, "imagen": "/images/tarta.jpg" },
+          { "id": 18, "nombre": "Flan Casero", "descripcion": "Flan tradicional de la casa.", "precio": 0.00, "imagen": "/images/flan.jpg" },
+          { "id": 19, "nombre": "Yogur", "descripcion": "Yogur natural.", "precio": 0.00, "imagen": "/images/yogur.jpg" }
+        ]
+      },
+      {
+        "id": "bebidas",
+        "titulo": "Bebidas y Vinos",
+        "items": [
+          { "id": 10, "nombre": "Cerveza", "descripcion": "Refrescante para acompañar tu comida.", "precio": 0.00, "imagen": "/images/cerveza.jpg" },
+          { "id": 11, "nombre": "Vino de la Casa", "descripcion": "Perfecto para acompañar nuestras carnes.", "precio": 0.00, "imagen": "/images/vino.jpg" }
+        ]
+      }
+    ]
   },
-  "categorias": [
-    {
-      "id": "tapas",
-      "titulo": "Tapas y Entrantes",
-      "items": [
-        { "id": 1, "nombre": "Patatas Bravas", "descripcion": "Patatas rústicas con nuestra salsa brava casera y alioli.", "precio": 5.50 },
-        { "id": 2, "nombre": "Croquetas de Jamón", "descripcion": "Ración de 6 croquetas cremosas de jamón ibérico.", "precio": 7.00 },
-        { "id": 3, "nombre": "Gambas al Ajillo", "descripcion": "Gambas frescas salteadas con ajo, guindilla y aceite de oliva virgen extra.", "precio": 12.00 },
-        { "id": 4, "nombre": "Tabla de Ibéricos", "descripcion": "Selección de jamón ibérico, chorizo, salchichón y queso manchego.", "precio": 18.50 }
-      ]
+
+
+  "pt": {
+    "nombreRestaurante": "Parrillada A Capela",
+    "moneda": "€",
+    "contacto": {
+      "direccion": "Rúa Xermade, 10, 27300 Guitiriz, Lugo",
+      "telefono": "+34667323029",
+      "horarios": "Ter-Sex 08:00–23:30 \n Sáb-Dom 09:00–23:30 \n Segunda: Fechado",
+      "mapaUrl": ""
     },
-    {
-      "id": "principales",
-      "titulo": "Platos Principales",
-      "items": [
-        { "id": 5, "nombre": "Paella Valenciana", "descripcion": "Arroz tradicional con pollo, conejo, judías verdes y azafrán (Mínimo 2 personas).", "precio": 16.00 },
-        { "id": 6, "nombre": "Paella de Marisco", "descripcion": "Arroz caldoso con gambas, mejillones, calamares y cigalas.", "precio": 18.00 },
-        { "id": 7, "nombre": "Chuletón de Ternera", "descripcion": "Corte de carne a la parrilla (500g), acompañado de pimientos de Padrón.", "precio": 24.50 },
-        { "id": 8, "nombre": "Bacalao a la Vizcaína", "descripcion": "Lomo de bacalao confitado con salsa tradicional de pimientos choriceros.", "precio": 19.00 }
-      ]
+    "categorias": [
+      {
+        "id": "entrantes",
+        "titulo": "Petiscos (Entradas)",
+        "items": [
+          { "id": 1, "nombre": "Polvo à Galega", "descripcion": "Tradicional polvo com batatas cozidas (cachelos).", "precio": 0.00, "imagen": "/images/pulpo.jpg" },
+          { "id": 3, "nombre": "Tábua de Presunto Ibérico", "descripcion": "Cortes de presunto ibérico acompanhados de pão rústico.", "precio": 0.00, "imagen": "/images/jamon.jpg" },
+          { "id": 4, "nombre": "Lulas Frescas", "descripcion": "Anéis de lula fritos, crocantes por fora.", "precio": 0.00, "imagen": "/images/calamares.jpg" },
+          { "id": 5, "nombre": "Camarões ao Alho", "descripcion": "Camarões cozidos em panela de barro com alho e malagueta.", "precio": 0.00, "imagen": "/images/gambas.jpg" },
+          { "id": 6, "nombre": "Croquetes Caseiros", "descripcion": "Nossos tradicionais croquetes da casa.", "precio": 0.00, "imagen": "/images/croquetas.jpg" }
+        ]
+      },
+      {
+        "id": "carnes",
+        "titulo": "Carnes e Grelhados",
+        "items": [
+          { "id": 9, "nombre": "Costelinha de Porco", "descripcion": "Costelas de porco feitas na brasa a lenha.", "precio": 0.00, "imagen": "/images/cerdo.jpg" },
+          { "id": 10, "nombre": "Costeleta de Vitela (Chuletón)", "descripcion": "Impressionante corte premium na grelha, servido com sal grosso.", "precio": 0.00, "imagen": "/images/chuleton.jpg" },
+          { "id": 11, "nombre": "Raxo com Batatas", "descripcion": "Lombo de porco picado e marinado, servido com batatas fritas.", "precio": 0.00, "imagen": "/images/raxo.jpg" },
+          { "id": 12, "nombre": "Lacão com Grelos", "descripcion": "Prato farto e muito tradicional da gastronomia galega.", "precio": 0.00, "imagen": "/images/lacon.jpg" },
+          { "id": 13, "nombre": "Asinhas de Frango", "descripcion": "Asinhas de frango crocantes feitas na brasa.", "precio": 0.00, "imagen": "/images/pollo.jpg" }
+        ]
+      },
+      {
+        "id": "mariscos",
+        "titulo": "Peixes e Frutos do Mar",
+        "items": [
+          { "id": 14, "nombre": "Mariscada Especial", "descripcion": "Espetacular seleção de frutos do mar: Lagosta, lagostins, percebes e vieiras.", "precio": 0.00, "imagen": "/images/mariscada.jpg" },
+          { "id": 15, "nombre": "Lagostins na Chapa", "descripcion": "Lagostins frescos preparados na chapa.", "precio": 0.00, "imagen": "/images/langostino.jpg" },
+          { "id": 16, "nombre": "Paella de Frutos do Mar", "descripcion": "(Sob encomenda) Tradicional paella com o melhor sabor do mar.", "precio": 0.00, "imagen": "/images/paella.jpg" }
+        ]
+      },
+      {
+        "id": "postres",
+        "titulo": "Sobremesas Caseiras",
+        "items": [
+          { "id": 17, "nombre": "Torta Gelada", "descripcion": "Sobremesa fria tradicional.", "precio": 0.00, "imagen": "/images/tarta.jpg" },
+          { "id": 18, "nombre": "Pudim Caseiro", "descripcion": "Pudim tradicional (Flan) da casa.", "precio": 0.00, "imagen": "/images/flan.jpg" },
+          { "id": 19, "nombre": "Iogurte", "descripcion": "Iogurte natural.", "precio": 0.00, "imagen": "/images/yogur.jpg" }
+        ]
+      },
+      {
+        "id": "bebidas",
+        "titulo": "Bebidas e Vinhos",
+        "items": [
+          { "id": 10, "nombre": "Cerveja", "descripcion": "Refrescante para acompanhar sua refeição.", "precio": 0.00, "imagen": "/images/cerveza.jpg" },
+          { "id": 11, "nombre": "Vinho da Casa", "descripcion": "Perfeito para acompanhar nossas carnes.", "precio": 0.00, "imagen": "/images/vino.jpg" }
+        ]
+      }
+    ]
+  },
+
+  
+  "en": {
+    "nombreRestaurante": "Parrillada A Capela",
+    "moneda": "€",
+    "contacto": {
+      "direccion": "Rúa Xermade, 10, 27300 Guitiriz, Lugo",
+      "telefono": "+34667323029",
+      "horarios": "Tue-Fri 08:00–23:30 \n Sat-Sun 09:00–23:30 \n Monday: Closed",
+      "mapaUrl": ""
     },
-    {
-      "id": "postres",
-      "titulo": "Postres Caseros",
-      "items": [
-        { "id": 9, "nombre": "Crema Catalana", "descripcion": "Clásico postre cremoso con capa de azúcar caramelizada.", "precio": 5.00 },
-        { "id": 10, "nombre": "Tarta de Santiago", "descripcion": "Tarta tradicional de almendras espolvoreada con azúcar glas.", "precio": 6.00 }
-      ]
-    },
-    {
-      "id": "bebidas",
-      "titulo": "Bebidas",
-      "items": [
-        { "id": 11, "nombre": "Caña de Cerveza", "descripcion": "Cerveza de barril bien fría.", "precio": 2.00 },
-        { "id": 12, "nombre": "Copa de Vino Tinto", "descripcion": "Vino tinto de la casa (D.O. Rioja o Ribera del Duero).", "precio": 3.50 },
-        { "id": 13, "nombre": "Jarra de Sangría", "descripcion": "Refrescante sangría casera con fruta fresca (1 Litro).", "precio": 14.00 }
-      ]
-    }
-  ]
+    "categorias": [
+      {
+        "id": "entrantes",
+        "titulo": "Starters & Tapas",
+        "items": [
+          { "id": 1, "nombre": "Galician Style Octopus", "descripcion": "Traditional octopus with boiled potatoes (cachelos).", "precio": 0.00, "imagen": "/images/pulpo.jpg" },
+          { "id": 3, "nombre": "Iberian Ham Board", "descripcion": "Sliced Iberian ham served with rustic bread.", "precio": 0.00, "imagen": "/images/jamon.jpg" },
+          { "id": 4, "nombre": "Fresh Fried Calamari", "descripcion": "Fried squid rings, crispy on the outside.", "precio": 0.00, "imagen": "/images/calamares.jpg" },
+          { "id": 5, "nombre": "Garlic Prawns", "descripcion": "Prawns cooked in a clay pot with garlic and chili.", "precio": 0.00, "imagen": "/images/gambas.jpg" },
+          { "id": 6, "nombre": "Homemade Croquettes", "descripcion": "Our traditional house croquettes.", "precio": 0.00, "imagen": "/images/croquetas.jpg" }
+        ]
+      },
+      {
+        "id": "carnes",
+        "titulo": "Meats & Grill",
+        "items": [
+          { "id": 9, "nombre": "Pork Ribs", "descripcion": "Wood-fired grilled pork ribs.", "precio": 0.00, "imagen": "/images/cerdo.jpg" },
+          { "id": 10, "nombre": "Beef Ribeye (Chuletón)", "descripcion": "Impressive premium grilled cut, served with coarse salt.", "precio": 0.00, "imagen": "/images/chuleton.jpg" },
+          { "id": 11, "nombre": "Raxo with Potatoes", "descripcion": "Diced and marinated pork loin, served with french fries.", "precio": 0.00, "imagen": "/images/raxo.jpg" },
+          { "id": 12, "nombre": "Lacón con Grelos", "descripcion": "A hearty and traditional dish from Galician gastronomy.", "precio": 0.00, "imagen": "/images/lacon.jpg" },
+          { "id": 13, "nombre": "Chicken Wings", "descripcion": "Crispy wood-fired grilled chicken wings.", "precio": 0.00, "imagen": "/images/pollo.jpg" }
+        ]
+      },
+      {
+        "id": "mariscos",
+        "titulo": "Seafood & Fish",
+        "items": [
+          { "id": 14, "nombre": "Special Seafood Platter", "descripcion": "Spectacular seafood selection: Lobster, scampi, barnacles, and baby scallops.", "precio": 0.00, "imagen": "/images/mariscada.jpg" },
+          { "id": 15, "nombre": "Grilled Prawns", "descripcion": "Fresh prawns cooked on the grill.", "precio": 0.00, "imagen": "/images/langostino.jpg" },
+          { "id": 16, "nombre": "Seafood Paella", "descripcion": "(Pre-order only) Traditional paella with the best taste of the sea.", "precio": 0.00, "imagen": "/images/paella.jpg" }
+        ]
+      },
+      {
+        "id": "postres",
+        "titulo": "Homemade Desserts",
+        "items": [
+          { "id": 17, "nombre": "Ice Cream Cake", "descripcion": "Traditional cold dessert.", "precio": 0.00, "imagen": "/images/tarta.jpg" },
+          { "id": 18, "nombre": "Homemade Flan", "descripcion": "Traditional house flan.", "precio": 0.00, "imagen": "/images/flan.jpg" },
+          { "id": 19, "nombre": "Yogurt", "descripcion": "Plain yogurt.", "precio": 0.00, "imagen": "/images/yogur.jpg" }
+        ]
+      },
+      {
+        "id": "bebidas",
+        "titulo": "Drinks & Wines",
+        "items": [
+          { "id": 10, "nombre": "Beer", "descripcion": "Refreshing, perfect to pair with your meal.", "precio": 0.00, "imagen": "/images/cerveza.jpg" },
+          { "id": 11, "nombre": "House Wine", "descripcion": "Perfect to accompany our meats.", "precio": 0.00, "imagen": "/images/vino.jpg" }
+        ]
+      }
+    ]
+  }
 }
