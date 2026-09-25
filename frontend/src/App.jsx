@@ -168,6 +168,16 @@ function App() {
       {/* --- INFORMAÇÕES RAPIDAS --- */}
       <section id="horarios" className="info-section">
         <div className="info-container">
+
+          {/* 1. RESERVAS (Esquerda) */}
+          {/* Pode deixar só className="info-box" */}
+          <div className="info-box">
+            <CalendarDays size={40} color="#f1c40f" strokeWidth={1.5} />
+            <h3>{t.reserva}</h3>
+            <p>{menu.contacto.telefono}</p>
+          </div>
+
+          {/* 2. HORÁRIOS (Meio) */}
           <div className="info-box">
             <Clock size={40} color="#f1c40f" strokeWidth={1.5} />
             <h3>{t.horarios}</h3>
@@ -176,17 +186,13 @@ function App() {
             </p>
           </div>
 
+          {/* 3. UBICACIÓN (Direita) */}
           <div id="ubicacion" className="info-box">
             <MapPin size={40} color="#f1c40f" strokeWidth={1.5} />
             <h3>{t.ubicacion}</h3>
             <p>{menu.contacto.direccion}</p>
           </div>
 
-          <div id="reservas" className="info-box">
-            <CalendarDays size={40} color="#f1c40f" strokeWidth={1.5} />
-            <h3>{t.reserva}</h3>
-            <p>{menu.contacto.telefono}</p>
-          </div>
         </div>
       </section>
 

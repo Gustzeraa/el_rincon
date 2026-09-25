@@ -62,9 +62,42 @@ body {
 .icon-nav { display: flex; justify-content: center; gap: 80px; padding-bottom: 70px; flex-wrap: wrap; }
 .nav-wrapper.sticky .icon-nav { padding: 15px 0; gap: 60px; }
 
-.icon-link { display: flex; flex-direction: column; align-items: center; color: #ddd; text-decoration: none; gap: 12px; transition: 0.3s; }
+.icon-link { 
+  display: flex; 
+  flex-direction: column; 
+  align-items: center; 
+  color: #ddd; 
+  text-decoration: none; 
+  gap: 8px; /* Espaço entre o ícone e o texto */
+  
+  /* A MÁGICA ATUALIZADA AQUI: */
+  flex: 1; /* Divide o espaço total em fatias iguais */
+  text-align: center;
+}
 .icon-link:hover { color: #f1c40f; transform: translateY(-5px); }
 .icon-link span { font-size: 0.85rem; text-transform: uppercase; letter-spacing: 2px; }
+
+/* Regras aplicadas APENAS em telas maiores que 768px (Tablets e Computadores) */
+@media (min-width: 768px) {
+  .icon-nav {
+    justify-content: center; /* Junta todos os ícones no centro da tela */
+    gap: 60px; /* Dá um respiro elegante de 60px entre cada um */
+  }
+
+  .icon-link {
+    flex: none; /* Desliga o modo "esticar" do celular */
+    transition: transform 0.2s; /* Prepara a animação do hover */
+  }
+
+  /* Efeito extra: o botão sobe um pouquinho quando o mouse passa por cima */
+  .icon-link:hover {
+    transform: translateY(-4px); 
+  }
+
+  .icon-link span {
+    font-size: 0.85rem; /* Volta a letra para um tamanho legível no monitor */
+  }
+}
 
 /* --- CARDÁPIO CENTRALIZADO --- */
 .menu-container { max-width: 1200px; margin: 0 auto; padding: 80px 40px 100px; }
